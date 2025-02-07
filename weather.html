@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Weather App</h1>
+    <div class="weather">
+      <div class="input-container">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="getWeather()">Get Weather</button>
+      </div>
+      <div id="loadingSpinner" class="spinner hidden"></div>
+      <div id="weatherData" class="weather-card hidden">
+        <!-- Weather data will be displayed here -->
+      </div>
+      <div class="temp-toggle hidden">
+        <button id="tempF" onclick="toggleTemperature('F')">°F</button>
+        <button id="tempC" onclick="toggleTemperature('C')">°C</button>
+      </div>
+    </div>
+  </div>
+  <div id="weatherBackground" class="weather-background">
+    <!-- Dynamic background effects -->
+  </div>
+  <script src="weather.js"></script>
+</body>
+</html>
